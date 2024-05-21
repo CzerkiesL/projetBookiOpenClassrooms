@@ -30,9 +30,45 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 20px;
+    outline: none;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+.neutral-star {
+    color: var(--main-bg-color);
 }
 
 /****** Header ***********/
@@ -84,7 +120,7 @@ a {
     margin-bottom: 10px;
 }
 
-#research p {
+#research .catch-phrase {
     margin-bottom: 40px;
 }
 
@@ -108,6 +144,7 @@ a {
 }
 
 .search-bar-label i {
+    color: #000;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -126,14 +163,9 @@ a {
 }
 
 .search-btn {
-    cursor: pointer;
     background: var(--main-color);
     color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 0 20px;
     border: none;
-    outline: none;
     border-radius: 0 15px 15px 0;
     transition: background 0.2s ease;
 }
@@ -146,32 +178,59 @@ a {
     display: none;
 }
 
-/* .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-} */
+.search-btn-mobile i {
+    color: white;
+}
 
-/* .card img {
-    object-fit: cover;
-} */
+/* filtres */
+.filter-container {
+    margin: 40px 0;
+    display: flex;
+}
 
-/* .card-title {
-    font-size: 16px;
-} */
+.filter-container p {
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-/* .euro {
-    font-weight: 700;
-} */
+.filter-btn {
+    margin-left: 30px;
+    border-radius: 25px;
+    border: 1px solid #333;
+    background: white;
+}
 
-/* .fa-solid {
-    color: var(--main-color);
-} */
+.filter-btn:hover {
+    background: var(--filter-bg-color);
+}
 
-/* .neutral-star {
-    color: var(--main-bg-color);
-} */
+.filter-btn i {
+    margin-right: 5px;
+}
+
+/* info */
+.info {
+    display: flex;
+}
+
+.info .icon {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 50%;
+}
+
+.info i {
+    font-size: 14px;
+}
+
+.info p {
+    line-height: 25px;
+}
 
 /****** Hebergements And Populaires ***********/
 /* #hebergements-and-populaires {
