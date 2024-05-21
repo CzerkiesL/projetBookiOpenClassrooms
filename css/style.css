@@ -264,7 +264,6 @@ button {
 
 .hebergement-card .card {
     height: 200px;
-    width: 250px;
 }
 
 .hebergement-card .card img {
@@ -355,8 +354,16 @@ button {
     border-radius: 20px 20px 0 0;
 }
 
-.activitie-container .card h3 {
-    padding: 10px 20px;
+.activitie-container .card div {
+    height: 10%;
+    position: relative;
+}
+
+.activitie-container .card div h3 {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
 }
 
 /****** Footer ***********/
@@ -412,10 +419,22 @@ footer div a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    
-} 
+
+    .activitie-container .card {
+        width: 210px;
+        height: 270px;
+    }
+
+    .activitie-container .card img {
+        height: 75%;
+    }
+
+    .activitie-container .card div {
+        height: 25%;
+    }
+}
 
 /* Small devices (phones, less than 768px) */
-/* @media (max-width: 767.98px) { */
-/* ... */
-/* } */
+@media (max-width: 768px) {
+    
+}
