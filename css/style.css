@@ -339,6 +339,7 @@ section.populaires {
 
 .activitie-container {
     margin: 25px 0;
+    gap: 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
